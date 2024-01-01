@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="stylesheet" href="./assets/css/styles.css">
+
+      <title>Responsive Headphones Website | JBL</title>
+   </head>
+   <body>
+ 
+      <header class="header" id="header">
+        
+        <nav class="nav container">
+            <a href="#" class="nav__logo">JBL</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#product" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#model" class="nav__link">Models</a>
+                    </li>
+                </ul>
+
+
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+         
+      </header>
+
+      <main class="main">
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <img src="assets/img/home-img.png" alt="image" class="home__img">
+
+                    <h1 class="home__title">
+                        <span>J</span>
+                        <span>B</span>
+                        <span>L</span>
+                    </h1>
+
+                    <div class="home__tooltip">
+                        <img src="assets/img/tooltip-right.svg" alt="" class="home__tooltip-img">
+                        <span class="home__tooltip-text">Rs 4500</span>
+                    </div>
+                </div>
+                <a href="#" class="home__button button">Buy Now<i class="fa-solid fa-circle-play"></i></a>
+                <div class="home__social">
+                    <span class="home__social-text">Follow Us</span>
+                    <div class="home__social-links">
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" class="home__social-link"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">
+                        MORE ABOUT US
+                    </h2>
+
+                    <p class="about__description">
+                        Enjoy award winning JBL sound with wireless listening freeom and a sleek, streamlined design. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati atque odio accusamus voluptate ea illum libero. Rerum, nisi. Ut doloribus reprehenderit officia sint animi est laboriosam id nobis asperiores.
+                    </p>
+
+                    <a href="#" class="button">
+                        Know More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <img src="assets/img/about-img.png" alt="image" class="about__img">
+            </div>
+         </section>
+
+         
+         <section class="product section" id="product">
+            <h1 class="section__title">Choose Your product</h1>
+            <div class="tab_box">
+                <button class="tab_btn tab-btn-active">Headphones</button>
+                <button class="tab_btn">Speakers</button>
+                <button class="tab_btn">Earphones</button>
+            </div>
+            <div class="content products_tab_active">
+                <div class="images">
+                    <img src="./assets/img/headphone1.png" alt="image" class="product__img">
+                    <img src="./assets/img/headphone2.png" alt="image" class="product__img">
+                    <img src="./assets/img/headphone3.png" alt="image" class="product__img">
+                    <img src="./assets/img/headphone4.png" alt="image" class="product__img">
+                </div>
+                <div class="sliders left" onclick="side_slide(-1)">
+                    <span class="fas fa-angle-left"></span>
+                </div>
+                <div class="sliders right" onclick="side_slide(1)">
+                    <span class="fas fa-angle-right"></span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="images">
+                    <img src="./assets/img/speaker-1.jpeg" alt="image" class="product__img">
+                    <img src="./assets/img/speaker-2.jpg" alt="image" class="product__img">
+                    <img src="./assets/img/speaker-3.jpg" alt="image" class="product__img">
+                    <img src="./assets/img/speaker-4.jpeg" alt="image" class="product__img">
+                    <img src="./assets/img/speakers-5.jpg" alt="image" class="product__img">
+                </div>
+                <div class="sliders left" onclick="side_slide(-1)">
+                    <span class="fas fa-angle-left"></span>
+                </div>
+                <div class="sliders right" onclick="side_slide(1)">
+                    <span class="fas fa-angle-right"></span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="images">
+                    <img src="./assets/img/earphones-1.jpg" alt="image" class="product__img">
+                    <img src="./assets/img/earphones-2.jpg" alt="image" class="product__img">
+                    <img src="./assets/img/earphones-3.jpg" alt="image" class="product__img">
+                    <img src="./assets/img/earphones-4.jpg" alt="image" class="product__img">
+                    <img src="./assets/img/earphones-5.jpg" alt="image" class="product__img">
+                </div>
+                <div class="sliders left" onclick="side_slide(-1)">
+                    <span class="fas fa-angle-left"></span>
+                </div>
+                <div class="sliders right" onclick="side_slide(1)">
+                    <span class="fas fa-angle-right"></span>
+                </div>
+            </div>
+         </section>
+
+         
+         
+         <section class="model section" id="model">
+            <h2 class="section__title">MODEL SPECIFICATIONS</h2>
+            <div class="model__container container grid">
+                <div class="model__content">
+                    <img src="assets/img/model-img.png" alt="image" class="model__img">
+
+                    <div class="model__tooltip model__tooltip-1">
+                        <img src="assets/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                        <span class="model__tooltip-text">Best Comfort</span>
+                    </div>
+
+                    <div class="model__tooltip model__tooltip-2">
+                        <img src="assets/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                        <span class="model__tooltip-text">Easy Adjustment</span>
+                    </div>
+
+                    <div class="model__tooltip model__tooltip-3">
+                        <img src="assets/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                        <span class="model__tooltip-text">Fast Charge</span>
+                    </div>
+
+                    <div class="model__tooltip model__tooltip-4">
+                        <img src="assets/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                        <span class="model__tooltip-text">Custom Audio</span>
+                    </div>
+                </div>
+
+                <a href="#" class="model__button button">
+                    Buy Now <i class="fa-solid fa-circle-play"></i>
+                </a>
+
+            </div>
+         </section>
+      </main>
+
+      
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">JBL</a>
+            </div>
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">Products</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Headphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earbuds</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Product Help</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Updates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Provides</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__group">
+                   <form action="" class="footer__form">
+                        <input type="email" placeholder="Email" class="footer__input">
+                        <button type="button" class="footer__button button">
+                            Subscribe <i class="fa-brands fa-telegram"></i>
+                        </button>
+                   </form> 
+
+                   <div class="footer__social">
+                    <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                   </div>
+                </div>
+            </div>
+         </div>
+         <span class="footer__copy">
+            &copy; ALL Rights Reserved By JBL
+         </span>
+      </footer>
+
+      <script src="./assets/js/main.js"></script>
+   </body>
+</html>
